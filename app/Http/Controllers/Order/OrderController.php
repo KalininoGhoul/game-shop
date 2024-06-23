@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Order;
 use App\Enums\OrderStatus;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\OrderListResource;
+use App\Mail\OrderMail;
 use App\Models\Order\Order;
 use App\Models\Product\Product;
 use Illuminate\Http\JsonResponse;
@@ -42,13 +43,14 @@ class OrderController extends Controller
             ]);
         }
 
-        $activeCart->order()->create([
+        $order = $activeCart->order()->create([
             'cost' => $cost,
             'status' => OrderStatus::NEW,
         ]);
+
         $activeCart->update(['is_active' => false]);
 
-        Mail::to(auth()->user()->email)->send('');
+        Mail::to(auth()->user()->email)->send(new OrderMail($order));
 
         return response()->json([
             'message' => __('order.accepted'),
