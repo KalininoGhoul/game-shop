@@ -13,6 +13,10 @@
                 <input type="text" name="name">
             </label>
             <label>
+                Адрес
+                <input type="text" name="address">
+            </label>
+            <label>
                 Email
                 <input type="email" name="email">
             </label>

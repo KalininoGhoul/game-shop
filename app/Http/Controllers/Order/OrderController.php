@@ -9,6 +9,7 @@ use App\Models\Order\Order;
 use App\Models\Product\Product;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -46,6 +47,8 @@ class OrderController extends Controller
             'status' => OrderStatus::NEW,
         ]);
         $activeCart->update(['is_active' => false]);
+
+        Mail::to(auth()->user()->email)->send('');
 
         return response()->json([
             'message' => __('order.accepted'),

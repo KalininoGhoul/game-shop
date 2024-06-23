@@ -14,6 +14,8 @@ class SignUpRequest extends FormRequest
         return [
             'name' => ['required'],
 
+            'address' => ['required'],
+
             'email' => ['required', Rule::unique(User::class, 'email')],
 
             'password' => ['required'],
