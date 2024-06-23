@@ -154,6 +154,16 @@ body {
     width: 100%;
 }
 
+.filter_options-inner {
+    display: flex;
+    flex-flow: column;
+}
+
+.filter_option {
+    display: flex;
+    align-items: center;
+}
+
 /* end filter */
 
 /* product card */
