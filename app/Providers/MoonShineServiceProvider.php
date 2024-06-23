@@ -51,4 +51,9 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     {
         return [];
     }
+
+    public function register(): void
+    {
+        moonshine()->home(ProductResource::class);
+    }
 }
