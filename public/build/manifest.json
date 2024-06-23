@@ -1,0 +1,40 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-Ch29EWQ0.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/Roboto-Bold.ttf": {
+    "file": "assets/Roboto-Bold-BKtbn9Wi.ttf",
+    "src": "resources/fonts/Roboto-Bold.ttf"
+  },
+  "resources/fonts/Roboto-Italic.ttf": {
+    "file": "assets/Roboto-Italic-Dxo79a56.ttf",
+    "src": "resources/fonts/Roboto-Italic.ttf"
+  },
+  "resources/fonts/Roboto-Regular.ttf": {
+    "file": "assets/Roboto-Regular-BHeBnKzs.ttf",
+    "src": "resources/fonts/Roboto-Regular.ttf"
+  },
+  "resources/icons/arrow.svg": {
+    "file": "assets/arrow-DD_PKBTk.svg",
+    "src": "resources/icons/arrow.svg"
+  },
+  "resources/icons/star-active.svg": {
+    "file": "assets/star-active-DHBZ7VTP.svg",
+    "src": "resources/icons/star-active.svg"
+  },
+  "resources/icons/star-disabled.svg": {
+    "file": "assets/star-disabled-pi8EJ6mJ.svg",
+    "src": "resources/icons/star-disabled.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BwwH0S4_.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-7D-dB3_y.css"
+    ]
+  }
+}
