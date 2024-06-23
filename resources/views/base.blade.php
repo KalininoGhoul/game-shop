@@ -21,7 +21,7 @@
                 <a href="@auth() {{ route('cart.index') }} @endauth @guest {{ route('sign-up') }} @endguest" class="header_item">
                     <div class="header_title">
                         <img src="/assets/icons/user.svg" alt="">
-                        <div class="user_cart_count">{{ auth()->user()->activeCart?->products?->count() ?? 0 }}</div>
+                        <div class="user_cart_count">{{ auth()->user()?->activeCart?->products?->count() ?? 0 }}</div>
                     </div>
                     <div class="header_item-body">
                         <div class="header_item-title">
