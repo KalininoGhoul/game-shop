@@ -170,14 +170,14 @@ body {
 /* product card */
 
 .product-card {
-    width: calc(100% / 4 - (15px * 4));
+    width: calc(100% / 4 - (15px * 3));
     cursor: pointer;
     display: block;
 }
 
 @media (max-width: 1160px) {
     .product-card {
-        width: calc(100% / 3 - (15px * 3));
+        width: calc(100% / 3 - (15px * 2));
     }
 }
 
@@ -191,13 +191,13 @@ body {
     .product-card {
         width: 100%;
     }
-
-    .catalog_products {
-        margin-left: 0;
-    }
 }
 
 @media (max-width: 560px) {
+    .catalog_products {
+        margin-left: 0;
+    }
+
     .catalog {
         flex-flow: column;
     }
