@@ -14,8 +14,8 @@
 <body>
     <header class="header">
         <div class="container header_container">
-            <a href="/" class="header_logo">
-                Retro.Game
+            <a href="/" class="header_logo" style="width: 150px">
+                <img src="/assets/logo.png" alt="">
             </a>
             <div class="header_right">
                 <a href="@auth() {{ route('cart.index') }} @endauth @guest {{ route('sign-up') }} @endguest" class="header_item">
